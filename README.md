@@ -64,17 +64,24 @@ mise run start
 | --- | --- |
 | **NumPy** | High-performance Python library for numerical computing. Handles multi-dimensional arrays and fast vector/matrix mathematical calculations. |
 | **pandas** | Data analysis library providing fast, flexible data structures (`DataFrame`) designed to manipulate, clean, join, and aggregate tabular datasets (e.g., CSVs). |
-<<<<<<< Updated upstream
-=======
 | **Geopandas** | Geospatial data analysis library making working with easier. It extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by **shapely**. |
-| **Shapely** | 
->>>>>>> Stashed changes
+| **Shapely** | an extension library of Geopandas which is used to create, manipulate, and analyze planar geometric objects. It relies on files that contain coordinates and geometries of buildings and can be used on creating maps. Mostly used for creating plygons, points and lines |
+| **Folium** | Python library that allows you to create an interactive map and goes hand-in-hand with Geopandas to filter out **geojson**/csv files to create objects on a map. 
+| **GeoJSON Files** | Just a JSON file but used for geospatial data analysis and visualization. |
 | **JupyterLab** | Interactive web-based development environment that combines executable code cells, visualization outputs (maps, plots), and rich text documentation. |
 | **Matplotlib** | Visualization library for creating static, animated, and interactive publication-quality charts and spatial plots in Python. |
 | **Weather API** | An **API (Application Programming Interface)** acts as a digital messenger between your script and an external server. The weather API (Open-Meteo) allows your script to request historical solar irradiance data for specific coordinates. |
 
+
 <<<<<<< Updated upstream
 =======
+
+### Not needed but some third-party tools that were used during the process
+
+- **geojson.io:** Can create custom geojson files without manually using Shapely in the python script.
+- **https://www.geeksforgeeks.org/python/visualizing-geospatial-data-using-folium-in-python/:** Tutorial on basics of Folium Library.
+- **https://www.lefixea.com/article/solar-power-generation-calculator6:** The formula fo rfinding Solar Panel Capacity of every building and the Solar Power Generation.
+- **https://open-meteo.com/en/features#available_apis**  Use this to create your own weather API to expand on more variables than just the Irradiance data we get from the 'fetch_irradianceAPI.py' inside of this repository. 
 
 >>>>>>> Stashed changes
 ---
