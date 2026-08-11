@@ -1,1 +1,17 @@
+#Operating System files (macOS metadata)
 .DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints & local cache
+.ipynb_checkpoints/
+.cache.sqlite
+
+# Large datasets & generated maps
+# None yet
