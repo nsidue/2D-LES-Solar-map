@@ -1,0 +1,28 @@
+[tools]
+python = "3.11"
+uv = "latest"
+
+[tasks.setup]
+description = "Create virtual environment, pull Git LFS data, and install dependencies"
+run = """
+echo "==> Pulling Git LFS pointers (435 MB CSV)..."
+git lfs pull || echo "Warning: Git LFS pull failed or LFS not installed. Verify Data/pluto_26v1.csv size."
+
+echo "==> Setting up Python virtual environment..."
+uv venv --quiet
+uv pip install openmeteo-requests requests-cache retry-requests numpy pandas jupyterlab matplotlib seaborn scikit-learn geopandas folium branca shapely
+"""
+
+[tasks.start]
+description = "Ensure dependencies and LFS data are ready, then launch Jupyter Lab"
+depends = ["setup"]
+run = "uv run jupyter lab"
+
+[tasks.clean]
+description = "Remove the virtual environment and Jupyter checkpoints for a fresh start"
+run = "rm -rf .venv .ipynb_checkpoints"
+
+[tasks.reset]
+description = "Wipe the environment and start completely fresh"
+depends = ["clean"]
+run = "mise run start"
