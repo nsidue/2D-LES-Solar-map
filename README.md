@@ -64,10 +64,19 @@ mise run start
 | --- | --- |
 | **NumPy** | High-performance Python library for numerical computing. Handles multi-dimensional arrays and fast vector/matrix mathematical calculations. |
 | **pandas** | Data analysis library providing fast, flexible data structures (`DataFrame`) designed to manipulate, clean, join, and aggregate tabular datasets (e.g., CSVs). |
+<<<<<<< Updated upstream
+=======
+| **Geopandas** | Geospatial data analysis library making working with easier. It extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by **shapely**. |
+| **Shapely** | 
+>>>>>>> Stashed changes
 | **JupyterLab** | Interactive web-based development environment that combines executable code cells, visualization outputs (maps, plots), and rich text documentation. |
 | **Matplotlib** | Visualization library for creating static, animated, and interactive publication-quality charts and spatial plots in Python. |
 | **Weather API** | An **API (Application Programming Interface)** acts as a digital messenger between your script and an external server. The weather API (Open-Meteo) allows your script to request historical solar irradiance data for specific coordinates. |
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 ---
 
 **P.S.** - you can look at .mise.toml for more handy task commands and to understand the build recipe.
