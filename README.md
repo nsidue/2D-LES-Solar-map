@@ -2,7 +2,7 @@
 
 A geospatial analysis and data pipeline project designed to estimate building solar potential across NYC's Lower East Side (LES) by combining NYC PLUTO tax lot data, spatial building footprints, and solar irradiance weather metrics.
 
-2026 Contributors: Arfa Chowdhary, Nabila Siddique
+2026 Contributors: Nabila Siddique
 
 ---
 
